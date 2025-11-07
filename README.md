@@ -15,14 +15,14 @@ Este projeto é um sistema simples em linguagem C para gerenciamento de produtos
 
 ## Imagens Demonstrativas
 
-./1.png
-./2.png
-./3.png
+![cadastro](1.png).
+![listagem](2.png).
+![busca](3.png).
 
 ## Observações
 
 *   O sistema suporta até **100 produtos**.
 *   O nome da loja pode ser alterado durante a execução.
-*   A busca por produto é feita por comparação direta de strings.
+*   Nao suporta nome com espacos, por exemplo se quiser mercado jm use mercado_jm ou mercadoJM
 
 
