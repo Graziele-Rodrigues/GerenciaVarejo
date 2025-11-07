@@ -122,7 +122,7 @@ void buscaProduto(struct gerenciaVarejo loja[]) {
     int encontrado = 0;
 
     printf("Qual o nome do produto que deseja buscar? ");
-    scanf("%[^\n]", produto);
+    scanf("%s", produto);
 
 
     for (int i = 0; i < totalProdutos && encontrado==0; i++) {
