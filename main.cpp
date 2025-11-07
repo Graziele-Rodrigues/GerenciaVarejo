@@ -23,7 +23,7 @@ int main() {
 
     printf("Bem-vindo ao Sistema de Gerenciamento de Varejo!\n");
     printf("Para iniciar, digite o nome da sua loja: ");
-    scanf("%s", nomeLoja); 
+    scanf(" %[^\n]", nomeLoja); 
     printf("Cadastro realizado. Iniaremos gerencia para: ");
     printString(nomeLoja);
 
@@ -69,7 +69,7 @@ int main() {
             printf("Op 6 selecionada: Mudar nome da loja.\n");
             printf("\n===============================================\n");
             printf("Digite o novo nome da loja: ");
-            scanf("%s", nomeLoja);            
+            scanf(" %[^\n]", nomeLoja);            
             printf("Nome da loja atualizado para: ");
             printString(nomeLoja);
             break;
@@ -96,7 +96,7 @@ void cadastroProduto(struct gerenciaVarejo loja[]) {
 
     for (int i = 0; i < quantidade; i++) {
         printf("Nome Produto: ");
-        scanf("%s", loja[totalProdutos].nomeProduto); 
+        scanf(" %[^\n]", loja[totalProdutos].nomeProduto); 
         printf("Valor Produto: ");
         scanf("%f", &loja[totalProdutos].precoProduto);
 
@@ -122,7 +122,7 @@ void buscaProduto(struct gerenciaVarejo loja[]) {
     int encontrado = 0;
 
     printf("Qual o nome do produto que deseja buscar? ");
-    scanf("%s", produto);
+    scanf(" %[^\n]", produto);
 
 
     for (int i = 0; i < totalProdutos && encontrado==0; i++) {
