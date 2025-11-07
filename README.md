@@ -23,6 +23,5 @@ Este projeto é um sistema simples em linguagem C para gerenciamento de produtos
 
 *   O sistema suporta até **100 produtos**.
 *   O nome da loja pode ser alterado durante a execução.
-*   Nao suporta nome com espacos, por exemplo se quiser mercado jm use mercado_jm ou mercadoJM
 
 
